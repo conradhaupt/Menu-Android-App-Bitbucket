@@ -4,4 +4,10 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <!-- Global Layout Dimensions -->
+    <dimen name="list_item_height_single">64dp</dimen>
+
+    <!-- Specific Layout Dimensions -->
+    <dimen name="activity_main_drawer_width">224dp</dimen>
+
 </resources>

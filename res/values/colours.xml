@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App Theme Colours -->
+    <color name="MenU_Blue_Light">#1c2130</color>
+    <color name="MenU_Blue_Dark">#151926</color>
+    <color name="MenU_Turquoise_Light">#028f76</color>
+    <color name="MenU_Turquoise_Dark">#00735e</color>
+    <color name="MenU_Green_Light">#b3e099</color>
+    <color name="MenU_Green_Dark">#8db277</color>
+    <color name="MenU_Red_Light">#d14334</color>
+    <color name="MenU_Red_Dark">#aa3125</color>
+    <color name="MenU_Peach_Dark">#ccba87</color>
+    <color name="MenU_Peach_Light">#ffeaad</color>
+    <color name="MenU_Grey_Dark">#c6c6c6</color>
+    <color name="MenU_Grey_Light">#d6d6d6</color>
+
+</resources>

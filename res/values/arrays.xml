@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="preference_theme_colours_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+
+    <string-array name="preference_theme_colours_titles">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Peach</item>
+    </string-array>
+    <string-array name="activity_main_drawer_titles">
+        <item>Featured</item>
+        <item>Orders</item>
+        <item>Settings</item>
+    </string-array>
+
+</resources>
