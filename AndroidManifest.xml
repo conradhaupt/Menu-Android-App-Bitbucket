@@ -12,7 +12,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" android:logo="@drawable/ic_logo">
+        android:theme="@style/AppTheme_Red" android:logo="@drawable/ic_logo">
         <activity
             android:name="com.conradhaupt.MenU.MainActivity"
             android:label="@string/app_name" >

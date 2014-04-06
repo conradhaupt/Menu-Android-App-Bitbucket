@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <PreferenceScreen
-        android:key="preference_screen_lookandfeel"
+    <PreferenceCategory
+        android:key="preference_lookandfeel"
         android:orderingFromXml="true"
-        android:title="@string/preference_screen_lookandfeel" >
-        <PreferenceCategory
-            android:key="preference_category_theme"
-            android:title="@string/preference_category_theme" >
-            <ListPreference
-                android:defaultValue="0"
-                android:dialogTitle="@string/preference_list_theme_colour_dialog_title"
-                android:enabled="true"
-                android:entries="@array/preference_theme_colours_titles"
-                android:entryValues="@array/preference_theme_colours_values"
-                android:key="preference_list_theme_colour"
-                android:negativeButtonText="@string/cancel"
-                android:positiveButtonText="@string/set"
-                android:title="@string/preference_list_theme_colour" />
-        </PreferenceCategory>
-    </PreferenceScreen>
+        android:title="@string/preference_lookandfeel" >
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/preference_lookandfeel_colour"
+            android:enabled="true"
+            android:entries="@array/preference_theme_colours_titles"
+            android:entryValues="@array/preference_theme_colours_values"
+            android:key="preference_theme_colour"
+            android:negativeButtonText="@string/cancel"
+            android:positiveButtonText="@string/set"
+            android:summary="@string/preference_lookandfeel_colour_dialog_summary"
+            android:title="@string/preference_lookandfeel_colour_dialog_title" />
+        
+    </PreferenceCategory><PreferenceCategory android:key="preference_storage" android:title="@string/preference_storage">
+        <SwitchPreference android:key="preference_storage_offline" android:title="@string/preference_storage_offline" android:summary="@string/preference_storage_offline_summary"/>
+        
+    </PreferenceCategory><PreferenceCategory android:key="preference_about" android:title="preference_about">
+        <Preference android:key="preference_about_restart" android:title="@string/preference_about_restart"/>
+        <Preference android:key="preference_about_copyright" android:title="@string/preference_about_copyright" android:selectable="false"/>
+    </PreferenceCategory>
 
 </PreferenceScreen>

@@ -6,6 +6,7 @@ import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.content.res.Resources.Theme;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -41,6 +42,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
 	// Value Variables
 	private String nDrawerOpenTitle;
 	private String nDrawerClosedTitle;
+	private boolean tFirstTime = true;
 
 	// Static Variables
 	public static final int FRAGMENT_IN_BACKSTACK = 0;
@@ -51,6 +53,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		initActivityPre();
+
 		setContentView(R.layout.activity_main);
 		initActivityPost();
 	}
@@ -343,7 +346,6 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		try {
 			// Check if fragment exists in the backstack
 			if (fManager.findFragmentByTag(fragmentTag) != null) {
-				System.out.println("step 1");
 				// Fragment exists, check if it is the current one
 				System.out.println("Fragment manager has "
 						+ fManager.getBackStackEntryCount());
@@ -352,11 +354,9 @@ public class MainActivity extends Activity implements OnItemClickListener {
 								fManager.getBackStackEntryCount() - 1)
 						.getName().equals(fragmentTag)) {
 					// Fragment is the current one therefore do nothing
-					System.out.println("step 2");
 					return FRAGMENT_CURRENT;
 				} else {
 					// Fragment is in the backstack but not the current one
-					System.out.println("step 3");
 					return FRAGMENT_IN_BACKSTACK;
 				}
 			}
