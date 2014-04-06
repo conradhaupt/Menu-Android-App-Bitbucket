@@ -11,7 +11,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="19dp"
-        android:text="Featured Fragment"
+        android:text="Orders Fragment"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

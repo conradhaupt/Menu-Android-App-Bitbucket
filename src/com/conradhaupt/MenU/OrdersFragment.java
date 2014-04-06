@@ -6,21 +6,27 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class FeaturedFragment extends Fragment {
+/**
+ * A simple {@link android.support.v4.app.Fragment} subclass. Use the
+ * {@link OrdersFragment#newInstance} factory method to create an instance of
+ * this fragment.
+ * 
+ */
+public class OrdersFragment extends Fragment {
 	/* Variables */
 	// Static Variables
-	public static final String TAG = "FeaturedFragment";
+	public static final String TAG = "OrdersFragment";
 
 	/* Methods */
-	public static FeaturedFragment newInstance() {
-		FeaturedFragment fragment = new FeaturedFragment();
+	public static OrdersFragment newInstance() {
+		OrdersFragment fragment = new OrdersFragment();
 		// Bundle args = new Bundle();
 		// args.putString(ARG_PARAM1, param1);
 		// fragment.setArguments(args);
 		return fragment;
 	}
 
-	public FeaturedFragment() {
+	public OrdersFragment() {
 		// Required empty public constructor
 	}
 
@@ -36,7 +42,7 @@ public class FeaturedFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
-		return inflater.inflate(R.layout.fragment_featured, container, false);
+		return inflater.inflate(R.layout.fragment_orders, container, false);
 	}
 
 }

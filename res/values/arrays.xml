@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <integer-array name="preference_theme_colours_values">
+    <string-array name="preference_theme_colours_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
-    </integer-array>
-
+    </string-array>
     <string-array name="preference_theme_colours_titles">
         <item>Red</item>
         <item>Green</item>
