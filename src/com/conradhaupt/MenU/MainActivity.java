@@ -136,7 +136,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
 
 		// Process theme preference
 		switch (Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(
-				this).getString("preference_list_theme_colour", "-1"))) {
+				this).getString("preference_theme_colour", "-1"))) {
 		case -1:
 			System.out.println("Theme preference not set, defaulting to Red");
 		case 0:
