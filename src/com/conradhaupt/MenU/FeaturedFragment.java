@@ -2,12 +2,12 @@ package com.conradhaupt.MenU;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.GridLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
 
@@ -97,7 +97,10 @@ public class FeaturedFragment extends Fragment {
 			// Change view values to suit element
 			ImageView iImageView = (ImageView) convertView
 					.findViewById(R.id.simple_item_image_1_image);
-			iImageView.setImageResource(android.R.drawable.arrow_down_float);
+			iImageView.setImageResource(R.drawable.ic_download_anim);
+			AnimationDrawable aAnimationDrawable = (AnimationDrawable) iImageView
+					.getDrawable();
+			aAnimationDrawable.start();
 
 			// Return view
 			return convertView;

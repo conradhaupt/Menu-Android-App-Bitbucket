@@ -22,7 +22,7 @@
         android:layout_below="@+id/fragment_featured_title"
         android:layout_margin="@dimen/fragment_featured_gridview_spacing"
         android:horizontalSpacing="@dimen/fragment_featured_gridview_spacing"
-        android:numColumns="2"
+        android:numColumns="@integer/fragment_featured_gridview_columns"
         android:verticalSpacing="@dimen/fragment_featured_gridview_spacing" >
     </GridView>
 

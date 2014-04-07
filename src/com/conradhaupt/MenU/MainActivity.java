@@ -147,7 +147,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
 			break;
 		case 2:
 			System.out.println("Setting theme as Peach");
-			this.setTheme(R.style.AppTheme_Peach);
+			this.setTheme(R.style.AppTheme_Blue);
 			break;
 		default:
 			break;

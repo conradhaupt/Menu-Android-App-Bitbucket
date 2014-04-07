@@ -12,8 +12,8 @@
         <item name="android:actionBarStyle">@style/ActionBarStyle_Green</item>
     </style>
 
-    <style name="AppTheme_Peach" parent="@style/AppBaseTheme">
-        <item name="android:actionBarStyle">@style/ActionBarStyle_Peach</item>
+    <style name="AppTheme_Blue" parent="@style/AppBaseTheme">
+        <item name="android:actionBarStyle">@style/ActionBarStyle_Blue</item>
     </style>
 
     <!-- ActionBarStyles -->
@@ -27,8 +27,8 @@
         <item name="android:background">@color/MenU_Green_Light</item>
     </style>
 
-    <style name="ActionBarStyle_Peach" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
-        <item name="android:background">@color/MenU_Peach_Light</item>
+    <style name="ActionBarStyle_Blue" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@color/MenU_Blue_Light</item>
     </style>
 
 </resources>

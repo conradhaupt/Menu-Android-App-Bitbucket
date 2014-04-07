@@ -7,7 +7,9 @@
     <ImageView
         android:id="@+id/simple_item_image_1_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_download_anim" />
 
     <RelativeLayout
         android:layout_width="match_parent"
