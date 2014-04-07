@@ -2,16 +2,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/MenU_Grey_Light"
     tools:context=".FeaturedFragment" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/fragment_featured_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp"
         android:text="Featured Fragment"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <GridView
+        android:id="@+id/fragment_featured_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fragment_featured_title"
+        android:layout_margin="@dimen/fragment_featured_gridview_spacing"
+        android:horizontalSpacing="@dimen/fragment_featured_gridview_spacing"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/fragment_featured_gridview_spacing" >
+    </GridView>
 
 </RelativeLayout>

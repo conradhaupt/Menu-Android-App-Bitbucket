@@ -15,4 +15,12 @@
     <color name="MenU_Grey_Dark">#c6c6c6</color>
     <color name="MenU_Grey_Light">#d6d6d6</color>
 
+    <!-- Drawable Colours -->
+    <color name="transparent">#00000000</color>
+    <!-- card colors -->
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow_1">#d4d4d4</color>
+    <color name="card_shadow_2">#dddddd</color>
+    <color name="card_detailing">#eee</color>
+
 </resources>

@@ -1,13 +1,26 @@
 package com.conradhaupt.MenU;
 
-import android.os.Bundle;
 import android.app.Fragment;
+import android.content.Context;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.GridLayout;
+import android.widget.GridView;
+import android.widget.ImageView;
+
+import com.conradhaupt.MenU.Models.Restaurant;
 
 public class FeaturedFragment extends Fragment {
 	/* Variables */
+	// Object Variables
+	private FeaturedGridViewAdapter fFeaturedGridViewAdapter;
+
+	// View Variables
+	private GridView mGridView;
+
 	// Static Variables
 	public static final String TAG = "FeaturedFragment";
 
@@ -33,10 +46,63 @@ public class FeaturedFragment extends Fragment {
 	}
 
 	@Override
+	public void onResume() {
+		super.onResume();
+		initFragmentPost();
+	}
+
+	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
 		return inflater.inflate(R.layout.fragment_featured, container, false);
+	}
+
+	/* Initialization Methods */
+	private void initFragmentPost() {
+		// Initialize GridView
+		mGridView = (GridView) this.getActivity().findViewById(
+				R.id.fragment_featured_gridview);
+
+		// Initialize GridView Adapter
+		Restaurant[] restaurants = new Restaurant[2];
+		restaurants[0] = new Restaurant();
+		restaurants[1] = new Restaurant();
+		fFeaturedGridViewAdapter = new FeaturedGridViewAdapter(
+				this.getActivity(), R.layout.simple_item_image_1, 0,
+				restaurants);
+
+		// Assign GridView Adapter
+		mGridView.setAdapter(fFeaturedGridViewAdapter);
+	}
+
+	/* Classes */
+	private class FeaturedGridViewAdapter extends ArrayAdapter<Restaurant> {
+
+		public FeaturedGridViewAdapter(Context context, int resource,
+				int textViewResourceId, Restaurant[] objects) {
+			super(context, resource, textViewResourceId, objects);
+			// TODO Auto-generated constructor stub
+		}
+
+		@Override
+		public View getView(int position, View convertView, ViewGroup parent) {
+			LayoutInflater lLayoutInflater = LayoutInflater.from(getContext());
+			// Inflate layout file if needed
+			if (convertView == null) {
+				convertView = lLayoutInflater.inflate(
+						R.layout.simple_item_image_1, null, false);
+			}
+
+			// Change view values to suit element
+			ImageView iImageView = (ImageView) convertView
+					.findViewById(R.id.simple_item_image_1_image);
+			iImageView.setImageResource(android.R.drawable.arrow_down_float);
+
+			// Return view
+			return convertView;
+		}
+
 	}
 
 }

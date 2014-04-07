@@ -6,12 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * A simple {@link android.support.v4.app.Fragment} subclass. Use the
- * {@link OrdersFragment#newInstance} factory method to create an instance of
- * this fragment.
- * 
- */
 public class OrdersFragment extends Fragment {
 	/* Variables */
 	// Static Variables

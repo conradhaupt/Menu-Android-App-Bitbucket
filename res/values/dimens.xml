@@ -10,4 +10,8 @@
     <!-- Specific Layout Dimensions -->
     <dimen name="activity_main_drawer_width">256dp</dimen>
 
+    <!-- Global Specific Layout Dimensions -->
+    <dimen name="simple_item_image_1_bar_height">24dp</dimen>
+    <dimen name="fragment_featured_gridview_spacing">6dp</dimen>
+
 </resources>
