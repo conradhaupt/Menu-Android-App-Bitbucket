@@ -15,8 +15,18 @@
     <color name="MenU_Grey_Dark">#c6c6c6</color>
     <color name="MenU_Grey_Light">#d6d6d6</color>
 
+    <!-- App Colours -->
+    <color name="selection_highlight_normal">#00000000</color>
+    <color name="selection_highlight_colour_red">#db4b3b</color>
+    <color name="selection_highlight_colour_green">#2da892</color>
+    <color name="selection_highlight_colour_blue">#274292</color>
+    <color name="selection_highlight_light_red">#f55442</color>
+    <color name="selection_highlight_light_green">#3bdbbe</color>
+    <color name="selection_highlight_light_blue">#3153b7</color>
+
     <!-- Drawable Colours -->
     <color name="transparent">#00000000</color>
+
     <!-- card colors -->
     <color name="card_background">#ffffff</color>
     <color name="card_shadow_1">#d4d4d4</color>

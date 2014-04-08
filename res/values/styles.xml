@@ -6,14 +6,23 @@
 
     <style name="AppTheme_Red" parent="@style/AppBaseTheme">
         <item name="android:actionBarStyle">@style/ActionBarStyle_Red</item>
+        <item name="selection_highlight_colour">@color/selection_highlight_colour_red</item>
+        <item name="selection_highlight_light">@color/selection_highlight_light_red</item>
+        <item name="selection_highlight_normal">@color/selection_highlight_normal</item>
     </style>
 
     <style name="AppTheme_Green" parent="@style/AppBaseTheme">
         <item name="android:actionBarStyle">@style/ActionBarStyle_Green</item>
+        <item name="selection_highlight_colour">@color/selection_highlight_colour_blue</item>
+        <item name="selection_highlight_light">@color/selection_highlight_light_blue</item>
+        <item name="selection_highlight_normal">@color/selection_highlight_normal</item>
     </style>
 
     <style name="AppTheme_Blue" parent="@style/AppBaseTheme">
         <item name="android:actionBarStyle">@style/ActionBarStyle_Blue</item>
+        <item name="selection_highlight_colour">@color/selection_highlight_colour_blue</item>
+        <item name="selection_highlight_light">@color/selection_highlight_light_blue</item>
+        <item name="selection_highlight_normal">@color/selection_highlight_normal</item>
     </style>
 
     <!-- ActionBarStyles -->
@@ -21,13 +30,14 @@
 
     <style name="ActionBarStyle_Red" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@color/MenU_Red_Light</item>
+        <item name="android:actionButtonStyle"></item>
     </style>
 
     <style name="ActionBarStyle_Green" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@color/MenU_Green_Light</item>
     </style>
 
-    <style name="ActionBarStyle_Blue" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+    <style name="ActionBarStyle_Blue" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@color/MenU_Blue_Light</item>
     </style>
 

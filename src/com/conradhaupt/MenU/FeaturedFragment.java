@@ -2,14 +2,12 @@ package com.conradhaupt.MenU;
 
 import android.app.Fragment;
 import android.content.Context;
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
-import android.widget.ImageView;
 
 import com.conradhaupt.MenU.Models.Restaurant;
 
@@ -94,13 +92,7 @@ public class FeaturedFragment extends Fragment {
 						R.layout.simple_item_image_1, null, false);
 			}
 
-			// Change view values to suit element
-			ImageView iImageView = (ImageView) convertView
-					.findViewById(R.id.simple_item_image_1_image);
-			iImageView.setImageResource(R.drawable.ic_download_anim);
-			AnimationDrawable aAnimationDrawable = (AnimationDrawable) iImageView
-					.getDrawable();
-			aAnimationDrawable.start();
+			// TODO change view values
 
 			// Return view
 			return convertView;

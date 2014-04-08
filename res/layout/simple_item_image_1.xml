@@ -4,18 +4,20 @@
     android:layout_height="wrap_content"
     android:background="@drawable/card_background" >
 
-    <ImageView
-        android:id="@+id/simple_item_image_1_image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ic_download_anim" />
-
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="@dimen/simple_item_image_1_bar_height"
-        android:layout_below="@id/simple_item_image_1_image"
-        android:background="@android:color/background_light" >
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView1" >
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_action_download" />
 
 </RelativeLayout>
