@@ -1,44 +1,43 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
-
-    <style name="AppTheme" parent="AppBaseTheme"></style>
-
-    <style name="AppTheme_Red" parent="@style/AppBaseTheme">
-        <item name="android:actionBarStyle">@style/ActionBarStyle_Red</item>
-        <item name="selection_highlight_colour">@color/selection_highlight_colour_red</item>
-        <item name="selection_highlight_light">@color/selection_highlight_light_red</item>
-        <item name="selection_highlight_normal">@color/selection_highlight_normal</item>
-    </style>
-
-    <style name="AppTheme_Green" parent="@style/AppBaseTheme">
-        <item name="android:actionBarStyle">@style/ActionBarStyle_Green</item>
-        <item name="selection_highlight_colour">@color/selection_highlight_colour_blue</item>
-        <item name="selection_highlight_light">@color/selection_highlight_light_blue</item>
-        <item name="selection_highlight_normal">@color/selection_highlight_normal</item>
-    </style>
-
-    <style name="AppTheme_Blue" parent="@style/AppBaseTheme">
-        <item name="android:actionBarStyle">@style/ActionBarStyle_Blue</item>
-        <item name="selection_highlight_colour">@color/selection_highlight_colour_blue</item>
-        <item name="selection_highlight_light">@color/selection_highlight_light_blue</item>
-        <item name="selection_highlight_normal">@color/selection_highlight_normal</item>
-    </style>
-
     <!-- ActionBarStyles -->
-    <string name="ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse"></string>
+    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse"></style>
 
-    <style name="ActionBarStyle_Red" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+    <style name="ActionBarStyle.Red">
         <item name="android:background">@color/MenU_Red_Light</item>
-        <item name="android:actionButtonStyle"></item>
+        <item name="ic_launcher">@drawable/ic_launcher_red</item>
+        <item name="android:logo">@drawable/ic_logo_dark</item>
     </style>
 
-    <style name="ActionBarStyle_Green" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@color/MenU_Green_Light</item>
+    <style name="ActionBarStyle.Turquoise">
+        <item name="android:background">@color/MenU_Turquoise_Light</item>
+        <item name="ic_launcher">@drawable/ic_launcher_turquoise</item>
+        <item name="android:logo">@drawable/ic_logo_dark</item>
     </style>
 
-    <style name="ActionBarStyle_Blue" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+    <style name="ActionBarStyle.Blue">
         <item name="android:background">@color/MenU_Blue_Light</item>
+        <item name="ic_launcher">@drawable/ic_launcher_blue</item>
+        <item name="android:logo">@drawable/ic_logo_dark</item>
+    </style>
+
+    <style name="ActionBarStyle.Red.Inverse" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@color/MenU_Grey_Light</item>
+        <item name="android:logo">@drawable/ic_logo_red</item>
+    </style>
+
+    <style name="ActionBarStyle.Turquoise.Inverse" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@color/MenU_Grey_Light</item>
+        <item name="android:logo">@drawable/ic_logo_turquoise</item>
+    </style>
+
+    <style name="ActionBarStyle.Blue.Inverse" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@color/MenU_Grey_Light</item>
+        <item name="android:logo">@drawable/ic_logo_blue</item>
+    </style>
+
+    <style name="ActionBarStyle.ActionButtonStyle" parent="@android:style/Widget.Holo.ActionButton">
+        <item name="android:background">?attr/selection_drawable_background</item>
     </style>
 
 </resources>

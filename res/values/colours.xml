@@ -2,18 +2,30 @@
 <resources>
 
     <!-- App Theme Colours -->
-    <color name="MenU_Blue_Light">#1c2130</color>
-    <color name="MenU_Blue_Dark">#151926</color>
-    <color name="MenU_Turquoise_Light">#028f76</color>
-    <color name="MenU_Turquoise_Dark">#00735e</color>
-    <color name="MenU_Green_Light">#b3e099</color>
-    <color name="MenU_Green_Dark">#8db277</color>
-    <color name="MenU_Red_Light">#d14334</color>
-    <color name="MenU_Red_Dark">#aa3125</color>
-    <color name="MenU_Peach_Dark">#ccba87</color>
-    <color name="MenU_Peach_Light">#ffeaad</color>
-    <color name="MenU_Grey_Dark">#c6c6c6</color>
-    <color name="MenU_Grey_Light">#d6d6d6</color>
+    <color name="MenU_Blue_Light">#424653</color>
+    <color name="MenU_Blue_Normal">#282c39</color>
+    <color name="MenU_Blue_Dark">#252834</color>
+    <color name="MenU_Turquoise_Light">#2da28d</color>
+    <color name="MenU_Turquoise_Normal">#168b76</color>
+    <color name="MenU_Turquoise_Dark">#117c69</color>
+    <color name="MenU_Green_Light">#c0e5aa</color>
+    <color name="MenU_Green_Normal">#b8dca2</color>
+    <color name="MenU_Green_Dark">#b0d49a</color>
+    <color name="MenU_Red_Light">#d96356</color>
+    <color name="MenU_Red_Normal">#c95347</color>
+    <color name="MenU_Red_Dark">#b03f34</color>
+    <color name="MenU_Peach_Light">#ffeebb</color>
+    <color name="MenU_Peach_Normal">#fae8b6</color>
+    <color name="MenU_Peach_Dark">#f3e0ab</color>
+    <color name="MenU_Grey_1">#2d2d2d</color>
+    <color name="MenU_Grey_2">#414141</color>
+    <color name="MenU_Grey_3">#585858</color>
+    <color name="MenU_Grey_4">#939393</color>
+    <color name="MenU_Grey_5">#c6c6c6</color>
+    <color name="MenU_Grey_6">#dbdbdb</color>
+    <color name="MenU_Grey_7">#eeeeee</color>
+    <color name="MenU_Grey_Dark">#212121</color>
+    <color name="MenU_Grey_Light">#dddddd</color>
 
     <!-- App Colours -->
     <color name="selection_highlight_normal">#00000000</color>

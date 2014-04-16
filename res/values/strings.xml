@@ -16,6 +16,7 @@
     <string name="preference_lookandfeel_colour">Colour</string>
     <string name="preference_lookandfeel_colour_dialog_title">Theme colour</string>
     <string name="preference_lookandfeel_colour_dialog_summary">Requires a restart of the app</string>
+    <string name="preference_lookandfeel_colour_inverted">Inverse colour scheme</string>
     <string name="preference_storage">Storage</string>
     <string name="preference_storage_offline">Offline caching</string>
     <string name="preference_storage_offline_summary">Keep menus saved for offline</string>

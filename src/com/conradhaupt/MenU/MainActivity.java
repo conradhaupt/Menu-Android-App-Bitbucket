@@ -4,7 +4,11 @@ import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
+import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -41,6 +45,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
 	private String nDrawerOpenTitle;
 	private String nDrawerClosedTitle;
 	private boolean tFirstTime = true;
+	public int aCurrentThemeResourceID = 0;
 
 	// Static Variables
 	public static final int FRAGMENT_IN_BACKSTACK = 0;
@@ -133,25 +138,32 @@ public class MainActivity extends Activity implements OnItemClickListener {
 	private void initActivityPre() {
 
 		// Process theme preference
+		boolean inverse = PreferenceManager.getDefaultSharedPreferences(this)
+				.getBoolean("preference_theme_colour_inverse", false);
 		switch (Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(
-				this).getString("preference_theme_colour", "-1"))) {
-		case -1:
+				this).getString("preference_theme_colour", "-100"))) {
+		case -100:
 			System.out.println("Theme preference not set, defaulting to Red");
 		case 0:
 			System.out.println("Setting theme as Red");
-			this.setTheme(R.style.AppTheme_Red);
+			aCurrentThemeResourceID = inverse ? R.style.AppTheme_Red_Inverse
+					: R.style.AppTheme_Red;
 			break;
 		case 1:
-			System.out.println("Setting theme as Green");
-			this.setTheme(R.style.AppTheme_Green);
+			System.out.println("Setting theme as Turquoise");
+			aCurrentThemeResourceID = inverse ? R.style.AppTheme_Turquoise_Inverse
+					: R.style.AppTheme_Turquoise;
 			break;
 		case 2:
-			System.out.println("Setting theme as Peach");
-			this.setTheme(R.style.AppTheme_Blue);
+			System.out.println("Setting theme as Blue");
+			aCurrentThemeResourceID = inverse ? R.style.AppTheme_Blue_Inverse
+					: R.style.AppTheme_Blue;
 			break;
 		default:
 			break;
 		}
+		// Assign theme
+		setTheme(aCurrentThemeResourceID);
 
 		// Process ActionBar Values
 		this.getActionBar().setDisplayShowHomeEnabled(true);
@@ -181,10 +193,16 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		nDrawerOpenTitle = this.getResources().getString(
 				R.string.activity_main_drawer_open_title);
 
-		// Assign actionbardrawertoggle values
+		// Assign ActionBarDrawerToggle values
+		TypedArray a = getActionBar().getThemedContext()
+				.obtainStyledAttributes(aCurrentThemeResourceID,
+						new int[] { R.attr.ic_navigation });
+		int attributeResourceId = a.getResourceId(0, 0);
+
+		// Instantiate ActionBarDrawerToggle
+
 		mActionBarDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
-				R.drawable.ic_navigation_drawer,
-				R.string.activity_main_drawer_open_title,
+				attributeResourceId, R.string.activity_main_drawer_open_title,
 				R.string.activity_main_drawer_closed_title) {
 
 			@Override

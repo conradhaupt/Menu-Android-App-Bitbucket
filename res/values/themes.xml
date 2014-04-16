@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="AppTheme.Red">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.Red</item>
+        <item name="ic_navigation">@drawable/ic_action_navigation_drawer_indicator_dark</item>
+        <item name="selection_drawable_background">@drawable/selection_drawable_background_red</item>
+        <item name="android:actionBarItemBackground">@drawable/selection_drawable_background_red</item>
+        <item name="android:actionButtonStyle">@style/ActionBarStyle.ActionButtonStyle</item>
+    </style>
+
+    <style name="AppTheme.Turquoise">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.Turquoise</item>
+        <item name="ic_navigation">@drawable/ic_action_navigation_drawer_indicator_dark</item>
+        <item name="selection_drawable_background">@drawable/selection_drawable_background_turquoise</item>
+        <item name="android:actionBarItemBackground">@drawable/selection_drawable_background_turquoise</item>
+        <item name="android:actionButtonStyle">@style/ActionBarStyle.ActionButtonStyle</item>
+    </style>
+
+    <style name="AppTheme.Blue">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.Blue</item>
+        <item name="ic_navigation">@drawable/ic_action_navigation_drawer_indicator_dark</item>
+        <item name="selection_drawable_background">@drawable/selection_drawable_background_blue</item>
+        <item name="android:actionBarItemBackground">@drawable/selection_drawable_background_blue</item>
+        <item name="android:actionButtonStyle">@style/ActionBarStyle.ActionButtonStyle</item>
+    </style>
+
+    <style name="AppTheme.Red.Inverse">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.Red.Inverse</item>
+        <item name="ic_navigation">@drawable/ic_action_navigation_drawer_indicator_red</item>
+        <item name="android:actionMenuTextAppearance">@android:style/TextAppearance.Holo.Widget.ActionBar.Menu</item>
+        <item name="android:actionMenuTextColor">?android:attr/textColorPrimary</item>
+        <item name="selection_drawable_background">@drawable/selection_drawable_background_red</item>
+        <item name="android:actionBarItemBackground">@drawable/selection_drawable_background_red</item>
+        <item name="android:actionButtonStyle">@style/ActionBarStyle.ActionButtonStyle</item>
+    </style>
+
+    <style name="AppTheme.Blue.Inverse">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.Blue.Inverse</item>
+        <item name="ic_navigation">@drawable/ic_action_navigation_drawer_indicator_blue</item>
+        <item name="android:actionMenuTextAppearance">@android:style/TextAppearance.Holo.Widget.ActionBar.Menu</item>
+        <item name="android:actionMenuTextColor">?android:attr/textColorPrimary</item>
+        <item name="selection_drawable_background">@drawable/selection_drawable_background_blue</item>
+        <item name="android:actionBarItemBackground">@drawable/selection_drawable_background_blue</item>
+        <item name="android:actionButtonStyle">@style/ActionBarStyle.ActionButtonStyle</item>
+    </style>
+
+    <style name="AppTheme.Turquoise.Inverse">
+        <item name="android:actionBarStyle">@style/ActionBarStyle.Turquoise.Inverse</item>
+        <item name="ic_navigation">@drawable/ic_action_navigation_drawer_indicator_turquoise</item>
+        <item name="android:actionMenuTextAppearance">@android:style/TextAppearance.Holo.Widget.ActionBar.Menu</item>
+        <item name="android:actionMenuTextColor">?android:attr/textColorPrimary</item>
+        <item name="selection_drawable_background">@drawable/selection_drawable_background_turquoise</item>
+        <item name="android:actionBarItemBackground">@drawable/selection_drawable_background_turquoise</item>
+        <item name="android:actionButtonStyle">@style/ActionBarStyle.ActionButtonStyle</item>
+    </style>
+
+</resources>

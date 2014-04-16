@@ -2,6 +2,10 @@
 
     <item
         android:id="@+id/testID"
-        android:title="test title" android:visible="true" android:enabled="true" android:showAsAction="always"/>
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_blue"
+        android:showAsAction="always"
+        android:title="test title"
+        android:visible="true"/>
 
 </menu>
